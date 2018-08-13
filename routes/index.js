@@ -8,5 +8,10 @@ router.get('/', function(req, res, next) {
     res.json(fourteeners)
   })
 })
+router.get('/:rank', (req, res) => {
+  queries.getOne(req.params.rank).then(fourteeners => {
+    res.json(fourteeners)
+  })
+})
 
 module.exports = router;
