@@ -5,6 +5,7 @@ exports.up = function(knex, Promise) {
       table.text('name')
       table.integer('elevation')
       table.integer('rank')
+      table.integer('class')
   })
 };
 
